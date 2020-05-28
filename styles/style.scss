@@ -1,0 +1,74 @@
+// Variables
+
+// Colors
+
+$main-bl: #4896df; //#0779e4
+$main-gn: #21bf73;
+$main-rs: #eb4559;
+$light-bl: #77d8d8;
+$light-gn: #52de97;
+$light-rs: #ffb6b9;
+$dark: #333333;
+$sec-dark: #5a5a5a;
+$light: #fcfcfc;
+$light-txt: #ffffff;
+$shadow: #c7c7c7;
+
+
+// Fonts
+
+$title: 'Roboto', sans-serif;;
+$general: 'Noto Sans', sans-serif;;
+//$alt: ;
+
+// Font size
+
+$small: 14px;
+$medium: 2em;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.9;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $general;
+    //overflow-x: hidden;
+    background-color: #f5f5f5;
+    color: $sec-dark;
+    h1, h2, h3, h4 {
+        font-family: $title;
+        color: $dark;
+    }
+    section {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2em;
+    }
+    a {
+        text-decoration: none;
+    }
+    .subtitle {
+        margin: 2em  auto;
+        h2 {
+            font-size: $medium;
+            letter-spacing: 3px;
+            span {
+                color: $main-bl;
+            }
+        }
+    }
+}
+
+@import "components/header";
+@import "components/about";
+@import "components/why";
+@import "components/services";
+@import "components/team";
+@import "components/client";
+@import "components/contact";
+@import "components/location";
+@import "components/footer";

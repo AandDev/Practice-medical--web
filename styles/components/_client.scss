@@ -1,0 +1,48 @@
+.client-sec {
+    //width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .client-box {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        .client-item {
+            background-color: $light;
+            border-radius: 5px;
+            padding: 2em;
+            margin: 1em 0;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 2px 2px 5px $shadow;
+            @media screen and (min-width: 768px) {
+                width: 48%;
+            }
+            .client-img {
+                width: 30%;
+                img {
+                    width: 100%;
+                }
+            }
+            .client-text {
+                width: 60%;
+                h4 {
+                    color: $main-bl;
+                    font-size: 1.2em;
+                }
+                p {
+                    font-size: 0.9em;
+                    padding-top: 1em;
+                }
+            }
+        }
+    }
+}
